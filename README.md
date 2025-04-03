@@ -2,6 +2,11 @@
 
 *A minimalist showcase of my coding journey*
 
+## 🔗 Live Deployment  
+Hosted on Netlify:  
+https://sadafsportfolio.netlify.app/
+
+
 ## 🚀 Features
 - **Clean Design**: Professional layout with elegant typography
 - **Project Showcase**: Direct links to academic assignments
