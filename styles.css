@@ -1,7 +1,7 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap');
 
-/* Elegant Color Palette */
+
 :root {
     --cream: #f9f5f0;
     --dusty-rose: #d4a6b1;
@@ -10,7 +10,6 @@
     --gold-accent: #c0a080;
 }
 
-/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -405,12 +404,12 @@ footer {
 
 /* Fancy Button Styles */
 .download-btn {
-    display: inline-flex; /* Changed from inline-block */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 1rem 2.5rem;
     background: var(--deep-mauve);
-    color: white !important; /* Forces white text */
+    color: white !important;
     text-decoration: none;
     border-radius: 50px;
     font-family: 'Montserrat', sans-serif;
@@ -420,6 +419,10 @@ footer {
     box-shadow: 0 4px 15px rgba(140, 106, 125, 0.3);
     border: 2px solid transparent;
     margin-top: 1rem;
+    max-width: 220px; 
+    display: block;
+    text-align: center;
+    z-index: 1000; 
 }
 
 .download-btn:hover {
@@ -441,6 +444,7 @@ footer {
 .download-btn:hover .download-icon {
     transform: translateY(3px);
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
