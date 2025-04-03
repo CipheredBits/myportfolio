@@ -239,23 +239,29 @@ h2 {
 }
 
 /* Projects Section */
+#projects {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 .project-card {
+    width: 100%;
+    max-width: 350px;
     background: white;
-    border-radius: 5px;
+    border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
-    border: 1px solid var(--cream);
-    max-width: 350px;
-    margin: 0 auto;
 }
 
 .project-card:hover {
@@ -263,42 +269,36 @@ h2 {
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
+/* Keep all your existing card styles below */
+.project-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
 
 .project-info {
     padding: 1.5rem;
-}
-
-.project-info h3 {
-    color: var(--deep-mauve);
-    margin-bottom: 1rem;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.project-info p {
-    margin-bottom: 1rem;
 }
 
 .project-links {
     display: flex;
     gap: 1rem;
     margin-top: 1.5rem;
+    justify-content: center; /* Center links */
 }
 
 .project-links a {
     padding: 0.5rem 1.5rem;
-    background: white;
-    color: var(--deep-mauve);
+    background: var(--deep-mauve);
+    color: white;
     text-decoration: none;
     border-radius: 3px;
     font-size: 0.9rem;
     transition: all 0.3s ease;
-    border: 1px solid var(--deep-mauve);
-    font-family: 'Montserrat', sans-serif;
 }
 
 .project-links a:hover {
-    background: var(--deep-mauve);
-    color: white;
+    background: var(--dusty-rose);
 }
 
 /* Contact Section */
@@ -451,9 +451,9 @@ footer {
 }
 
 
-
 /* Responsive Design */
 @media (max-width: 768px) {
+   
     .about-content {
         flex-direction: column;
         text-align: center;
@@ -478,8 +478,14 @@ footer {
         padding-top: 4rem;
     }
 
+   
     .project-grid {
-        grid-template-columns: 1fr;
+        display: flex; 
+        padding: 0 1rem; 
+    }
+
+    .project-card {
+        max-width: 100%; 
     }
 
     .about-content img {
@@ -494,6 +500,7 @@ footer {
 }
 
 @media (max-width: 480px) {
+    
     #hero h1 {
         font-size: 2rem;
     }
@@ -514,5 +521,6 @@ footer {
     .project-links a {
         width: 100%;
         text-align: center;
+        padding: 0.8rem; 
     }
 }
