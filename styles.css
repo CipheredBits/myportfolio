@@ -419,10 +419,15 @@ footer {
     box-shadow: 0 4px 15px rgba(140, 106, 125, 0.3);
     border: 2px solid transparent;
     margin-top: 1rem;
-    max-width: 220px; 
-    display: block;
+    max-width: 220px;
     text-align: center;
-    z-index: 1000; 
+    z-index: 1000;
+    visibility: visible !important;
+}
+
+
+.cv-download {
+    overflow: visible;
 }
 
 .download-btn:hover {
@@ -444,6 +449,7 @@ footer {
 .download-btn:hover .download-icon {
     transform: translateY(3px);
 }
+
 
 
 /* Responsive Design */
